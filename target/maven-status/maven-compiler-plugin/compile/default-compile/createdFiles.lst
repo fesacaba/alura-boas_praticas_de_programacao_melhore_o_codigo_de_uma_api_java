@@ -1,0 +1,15 @@
+br/com/alura/adopet/api/AdopetApiApplication.class
+br/com/alura/adopet/api/repository/AdocaoRepository.class
+br/com/alura/adopet/api/controller/AdocaoController.class
+br/com/alura/adopet/api/model/Pet.class
+br/com/alura/adopet/api/model/Tutor.class
+br/com/alura/adopet/api/controller/TutorController.class
+br/com/alura/adopet/api/repository/TutorRepository.class
+br/com/alura/adopet/api/controller/PetController.class
+br/com/alura/adopet/api/model/Abrigo.class
+br/com/alura/adopet/api/model/Adocao.class
+br/com/alura/adopet/api/model/TipoPet.class
+br/com/alura/adopet/api/repository/AbrigoRepository.class
+br/com/alura/adopet/api/controller/AbrigoController.class
+br/com/alura/adopet/api/repository/PetRepository.class
+br/com/alura/adopet/api/model/StatusAdocao.class

@@ -1,0 +1,15 @@
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/model/Adocao.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/repository/TutorRepository.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/AdopetApiApplication.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/controller/PetController.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/controller/TutorController.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/controller/AdocaoController.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/repository/PetRepository.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/repository/AbrigoRepository.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/model/StatusAdocao.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/repository/AdocaoRepository.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/model/Pet.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/model/Abrigo.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/model/Tutor.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/model/TipoPet.java
+/Users/felipecastro/projetos/alura/alura-boas_praticas_de_programacao_melhore_o_codigo_de_uma_api_java/src/main/java/br/com/alura/adopet/api/controller/AbrigoController.java
