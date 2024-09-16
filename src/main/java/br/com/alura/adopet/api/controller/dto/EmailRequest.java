@@ -5,11 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
-@NoArgsConstructor
+
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmailRequest {
+
     private String to;
     private String from;
     private String subject;

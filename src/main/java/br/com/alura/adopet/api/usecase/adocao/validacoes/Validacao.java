@@ -1,4 +1,4 @@
-package br.com.alura.adopet.api.usecase.validacoes;
+package br.com.alura.adopet.api.usecase.adocao.validacoes;
 
 import br.com.alura.adopet.api.controller.dto.SolicitacaoAdocaoDTO;
 

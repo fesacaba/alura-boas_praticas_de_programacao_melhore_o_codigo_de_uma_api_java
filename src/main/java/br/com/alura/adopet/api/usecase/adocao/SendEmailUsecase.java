@@ -1,4 +1,4 @@
-package br.com.alura.adopet.api.usecase;
+package br.com.alura.adopet.api.usecase.adocao;
 
 import br.com.alura.adopet.api.controller.dto.EmailRequest;
 import lombok.RequiredArgsConstructor;

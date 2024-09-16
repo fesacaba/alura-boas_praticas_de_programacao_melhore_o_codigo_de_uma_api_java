@@ -1,9 +1,8 @@
-package br.com.alura.adopet.api.usecase;
+package br.com.alura.adopet.api.usecase.adocao;
 
 import br.com.alura.adopet.api.controller.dto.AprovacaoAdocaoDTO;
 import br.com.alura.adopet.api.controller.dto.EmailRequest;
 import br.com.alura.adopet.api.model.Adocao;
-import br.com.alura.adopet.api.model.StatusAdocao;
 import br.com.alura.adopet.api.repository.AdocaoRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +23,7 @@ public class AprovarAdocaoUsecase {
     public void execute(AprovacaoAdocaoDTO dto) {
 
         Adocao adocao = adocaoRepository.getReferenceById(dto.idAdocao());
-        adocao.setStatus(StatusAdocao.APROVADO);
+        adocao.marcarComoAprovado();
         repository.save(adocao);
 
         sendEmailUsecase.execute(EmailRequest.builder()

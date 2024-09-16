@@ -1,21 +1,18 @@
-package br.com.alura.adopet.api.usecase;
+package br.com.alura.adopet.api.usecase.adocao;
 
 import br.com.alura.adopet.api.controller.dto.SolicitacaoAdocaoDTO;
 import br.com.alura.adopet.api.controller.dto.EmailRequest;
-import br.com.alura.adopet.api.execption.ValidacaoException;
 import br.com.alura.adopet.api.model.Adocao;
 import br.com.alura.adopet.api.model.Pet;
-import br.com.alura.adopet.api.model.StatusAdocao;
 import br.com.alura.adopet.api.model.Tutor;
 import br.com.alura.adopet.api.repository.AdocaoRepository;
 import br.com.alura.adopet.api.repository.PetRepository;
 import br.com.alura.adopet.api.repository.TutorRepository;
-import br.com.alura.adopet.api.usecase.validacoes.Validacao;
+import br.com.alura.adopet.api.usecase.adocao.validacoes.Validacao;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Slf4j
@@ -37,14 +34,7 @@ public class SolicitarAdocaoUsecase {
         //strategy (S do SOLID) + chain of responsibility (O do SOLID)
         validacoes.forEach(v -> v.run(dto));
 
-        Adocao adocao = Adocao
-                .builder()
-                .data(LocalDateTime.now())
-                .status(StatusAdocao.AGUARDANDO_AVALIACAO)
-                .pet(pet)
-                .tutor(tutor)
-                .motivo(dto.motivo())
-                .build();
+        Adocao adocao = new Adocao(tutor, pet, dto.motivo());
 
         adocaoRepository.save(adocao);
 

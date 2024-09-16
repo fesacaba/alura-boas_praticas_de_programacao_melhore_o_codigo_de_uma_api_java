@@ -1,4 +1,4 @@
-package br.com.alura.adopet.api.usecase.validacoes;
+package br.com.alura.adopet.api.usecase.adocao.validacoes;
 
 import br.com.alura.adopet.api.controller.dto.SolicitacaoAdocaoDTO;
 import br.com.alura.adopet.api.execption.ValidacaoException;
@@ -16,19 +16,23 @@ import java.util.List;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class ValidacaoTutorComAdocaoEmAndamento implements Validacao{
+public class ValidacaoTutorComLimiteDeAcocoes implements Validacao{
 
     private final AdocaoRepository adocaoRepository;
     private final TutorRepository tutorRepository;
 
     @Override
     public void run(SolicitacaoAdocaoDTO dto) {
-        Tutor tutor = tutorRepository.getReferenceById(dto.idTutor());
         List<Adocao> adocoes = adocaoRepository.findAll();
+        Tutor tutor = tutorRepository.getReferenceById(dto.idTutor());
 
         for (Adocao a : adocoes) {
-            if (a.getTutor() == tutor && a.getStatus() == StatusAdocao.AGUARDANDO_AVALIACAO) {
-                throw new ValidacaoException("Tutor já possui outra adoção aguardando avaliação!");
+            int contador = 0;
+            if (a.getTutor() == tutor && a.getStatus() == StatusAdocao.APROVADO) {
+                contador = contador + 1;
+            }
+            if (contador == 5) {
+                throw new ValidacaoException("Tutor chegou ao limite máximo de 5 adoções!");
             }
         }
     }
